@@ -1,0 +1,42 @@
+.avatar {
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.person-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 8px 0 4px;
+}
+
+.login-name {
+    font-weight: 500;
+    color: #6A6666;
+    font-size: 18px;
+}
+
+.person-bio {
+    margin: 1rem 0;
+    font-size: 14px;
+    color: #6a737d;
+}
+
+.profile-button {
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    padding: 6px;
+    font-size: 14px;
+}
+
+@media (min-width: 232px) and (max-width: 630px) {
+    .avatar {
+        width: 100px;
+    }
+    .profile-button {
+        width: 40%;
+    }
+}

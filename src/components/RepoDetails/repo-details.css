@@ -1,0 +1,21 @@
+.search-filter {
+    display: flex;
+}
+
+.new-button {
+    cursor: pointer;
+    background: green;
+    font-weight: 600;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: white;
+    margin-left: 16px;
+    border-width: 0;
+    border-radius: 4px;
+    height: 35px;
+}
+
+.repo-search-root {
+    flex-grow: 1;
+    padding-right: 16px;
+}

@@ -1,5 +1,9 @@
+body{
+  font-family: Roboto, sans-serif;
+}
+
 .App {
-  text-align: center;
+
 }
 
 .App-logo {
@@ -29,4 +33,80 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.ptb-20 {
+  padding: 20px 0;
+}
+
+.mtb-1 {
+  margin: 1rem 0;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.fs-8 {
+  font-size: 8px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.border-bottom-gray {
+  border-bottom: 1px solid #d1d5da;
+}
+
+.grey-text {
+  color: #586069!important;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.pointer {
+  cursor: pointer;
 }

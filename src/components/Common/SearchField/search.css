@@ -1,0 +1,11 @@
+.search-input {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 96%;
+    line-height: 20px;
+}
+
+input:focus {
+    border: 1px solid cornflowerblue;
+}

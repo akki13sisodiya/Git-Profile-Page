@@ -1,0 +1,33 @@
+.main-container {
+    max-width: 1012px;
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.left-profile-pane {
+    width: 25%;
+    padding: 16px;
+}
+
+.description {
+    width: 75%;
+    padding-right: 16px;
+}
+
+@media (min-width: 232px) and (max-width: 630px) {
+    .main-container {
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+    .left-profile-pane {
+        width: 100%;
+        text-align: center;
+    }
+    .description {
+        width: 100%;
+        padding-left: 0;
+    }
+}

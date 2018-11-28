@@ -1,0 +1,13 @@
+.parent-nav {
+    display: flex;
+}
+
+.nav-tab {
+    cursor: pointer;
+    padding: 12px;
+}
+
+.active-tab {
+    border-bottom: 2px solid #e36209;
+}
+
