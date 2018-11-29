@@ -12,20 +12,18 @@ class ProfileContainer extends React.Component {
     componentDidMount() {
         const { dispatch } = this.props;
         dispatch(fetchProfile(USERNAME));
-        // dispatch(fetchRepositories(USERNAME));
+        dispatch(fetchRepositories(USERNAME));
     }
 
     render() {
         const { profile, repository } = this.props;
         return (
-            <div>
-                <div className="main-container">
-                    <div className="left-profile-pane">
-                        <ProfilePane data={profile.data} />
-                    </div>
-                    <div className="description">
-                        <RepoDetails data={repository.data} />
-                    </div>
+            <div className="main-container">
+                <div className="left-profile-pane">
+                    <ProfilePane data={profile.data} />
+                </div>
+                <div className="description">
+                    <RepoDetails repository={repository} profile={profile} />
                 </div>
             </div>
         );

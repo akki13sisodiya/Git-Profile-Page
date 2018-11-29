@@ -8,7 +8,11 @@ class ProfilePane extends React.Component {
         return (
             <React.Fragment>
                 <div>
-                    <img src={data.avatar_url} alt={data.name} className="avatar" />
+                    <img
+                        src={data.avatar_url}
+                        alt={data.name}
+                        className="avatar"
+                    />
                 </div>
                 <div className="person-name">{data.name}</div>
                 <div className="login-name">{data.login}</div>

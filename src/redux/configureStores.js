@@ -28,6 +28,5 @@ const store = () => {
     sagaMiddleware.run(rootSaga);
     return createdStore;
 };
-export const action = type => store.dispatch({ type });
 
 export default store;

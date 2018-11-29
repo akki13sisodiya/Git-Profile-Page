@@ -5,7 +5,7 @@ import './navbar.css'
 
 class Navbar extends React.Component {
     render() {
-        const { tabs, active, handleChange } = this.props;
+        const { tabs, active, handleChange, data } = this.props;
         return (
             <div>
                 <div className={classNames("parent-nav", "border-bottom-gray")}>
@@ -15,7 +15,13 @@ class Navbar extends React.Component {
                                 onClick={() => handleChange(index)}
                                 className={classNames('nav-tab', active === index && 'active-tab')}
                             >
-                                {tab}
+                                {tab.name}
+                                {
+                                    data && data[tab.no] &&
+                                        <span className={classNames('count', 'fs-12')}>
+                                            {data[tab.no]}
+                                        </span>
+                                }
                             </div>
                         ))
                     }
@@ -27,6 +33,7 @@ class Navbar extends React.Component {
 }
 
 Navbar.propTypes = {
+    data: PropTypes.object.isRequired,
     tabs: PropTypes.array.isRequired,
     active: PropTypes.number.isRequired,
     handleChange: PropTypes.func.isRequired,
